@@ -1,4 +1,4 @@
-$font-stack:    Montserrat,Hevetica, sans-serif;
+$font-stack:     Montserrat;
 $primary-bg-nav: #2C231A;
 $active-bg-nav: #FFCF98;
 
@@ -73,5 +73,16 @@ $active-bg-nav: #FFCF98;
   .produse{
     font-size: 3em;
     letter-spacing: 0;
+  }
+}
+
+.modal{
+  height: 100vh;
+  width:100%;
+  background-color: rgba(1,1,1,0.7);
+  overflow: hidden;
+  .modal-image{
+    width: 100%;
+    height: auto;
   }
 }
