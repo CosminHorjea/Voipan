@@ -1,19 +1,44 @@
 $font-stack:     Montserrat;
 $primary-bg-nav: #2C231A;
 $active-bg-nav: #FFCF98;
+$break-small: 473px;
+$break-large: 1200px;
 
 .navbar{
   font-family: $font-stack;
   background-color: $primary-bg-nav;
   padding: 0;
   height:3em;
+
   .container{
     height:100%;
   }
+  &-toggler{
+    color:white;
+  }
+  &-collapse{
+    height: 100%;
+    justify-content: flex-end;
+    background-color: $primary-bg-nav;
+    height: auto;
+
+    }
+
+
   &-brand{
     color: white;
     font-size: 2em;
     letter-spacing: 0.1em;
+    @media screen and (max-width: $break-small) {
+      font-size: 1.5em;
+      padding:0.2em;
+      margin-left: 1em;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+
+    }
+
   }
   &-nav{
     align-items: center;
@@ -33,6 +58,9 @@ $active-bg-nav: #FFCF98;
         line-height: 1.6;
       }
     }
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
   }
 }
 .image{
@@ -41,6 +69,13 @@ $active-bg-nav: #FFCF98;
     width:100%;
     background-image: url('../images/kitchen-cookies-work-cake-8148-min (1).jpg');
     background-size: cover;
+    &-second{
+      height:25em;
+      width:100%;
+      background-image: url('../images/pexels-photo-416607-min.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
   }
   &-showcase{
     margin-top: 0.6em;
@@ -60,29 +95,79 @@ $active-bg-nav: #FFCF98;
 
 .content{
   background-color: #FFCF98;
-  h1{
+
+  &-title{
     font-size: 6em;
     letter-spacing: 0.1em;
     text-align: center;
+    font-weight: 600;
+    @media screen and (max-width: $break-small) {
+      font-size: 3em;
+    }
   }
   .text{
     font-size: 1.8em;
     text-align: center;
     font-weight: 500;
+    @media screen and (max-width: $break-small) {
+      font-size: 1.5em;
+    }
   }
   .produse{
     font-size: 3em;
     letter-spacing: 0;
+    font-weight: 600;
+    @media screen and (max-width: $break-small) {
+      font-size: 2.5em;
+    }
+  }
+
+  .texts{
+    color: black;
+    h1{
+      font-size: 2.6em;
+      opacity: 0.71;
+      font-weight: 600;
+    }
+    p{
+      font-size: 1.2em;
+      opacity: 0.55;
+      font-weight: 400;
+    }
+  }
+}
+
+footer{
+  background-color: #2B231A;
+  color:#FFCF98;
+  h1{
+    margin-bottom: 0.6em;
+  }
+  h4{
+    margin-bottom: 0.2em;
   }
 }
 
 .modal{
   height: 100vh;
   width:100%;
-  background-color: rgba(1,1,1,0.7);
   overflow: hidden;
   .modal-image{
     width: 100%;
     height: auto;
+  }
+  &-content{
+    color:white;
+    background-color: rgba(255,255,255,0);
+    border: none;
+  }
+  &-header{
+    border: none;
+  }
+  &-body{
+    border: none;
+  }
+  &-footer{
+    border:none;
   }
 }
