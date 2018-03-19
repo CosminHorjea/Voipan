@@ -20,8 +20,5 @@ $( document ).ready(function() {
       "duration":200,
     });
   });
-  $( window ).resize(function() {
-    nav.
-  });
 
 });
