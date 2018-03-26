@@ -13,12 +13,18 @@ $( document ).ready(function() {
     $('.modal-image').attr('src',source);
     $('.modal-text').text(desc);
   });
-
+  $( window ).resize(function() {
+    if($( window ).width()>580){
+        nav.css('display','flex');}
+    if($( window ).width()<=580){
+          nav.css('display','none');
+        }
+    });
   btn.on('click',function(){
 
     nav.toggle({
       "duration":200,
     });
-  });
 
+  });
 });

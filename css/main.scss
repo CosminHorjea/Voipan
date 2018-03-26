@@ -1,8 +1,9 @@
-$font-stack:     Montserrat;
+$font-stack:     Montserrat,sans-serif;
 $primary-bg-nav: #2C231A;
 $active-bg-nav: #FFCF98;
 $break-small: 576px;//473px;
 $break-large: 1200px;
+
 
 .navbar{
   font-family: $font-stack;
@@ -76,6 +77,7 @@ $break-large: 1200px;
   }
   display: none;
   @media screen and (max-width: $break-small){
+    color:white;
     display: block;
     float: right;
     background-color: $primary-bg-nav;
@@ -114,6 +116,26 @@ $break-large: 1200px;
   }
 }
 
+.seeMore{
+  width: 100%;
+  hieght:1.2em;
+  text-align: center;
+  color: white;
+  .btn{
+    background-color: $active-bg-nav;
+    color: $primary-bg-nav;
+    font-weight: 500;
+    transition: all 0.4s;
+
+
+    &:hover{
+      background-color: $primary-bg-nav;
+      color: white;
+
+    }
+  }
+}
+
 .content{
   background-color: #FFCF98;
 
@@ -131,7 +153,7 @@ $break-large: 1200px;
     text-align: center;
     font-weight: 500;
     @media screen and (max-width: $break-small) {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   }
   .produse{
@@ -139,7 +161,7 @@ $break-large: 1200px;
     letter-spacing: 0;
     font-weight: 600;
     @media screen and (max-width: $break-small) {
-      font-size: 2.5em;
+      font-size: 2em;
     }
   }
 

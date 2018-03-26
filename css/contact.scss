@@ -1,0 +1,24 @@
+$font-stack:  Montserrat;
+$primary-bg-nav: #2C231A;
+$active-bg-nav: #FFCF98;
+
+
+.wrapper{
+  background-color: $active-bg-nav;
+  .contactForm{
+    font-weight: 500;
+  }
+  .sendMsg{
+    text-align: right;
+    button{
+      font-weight: 500;
+      background-color: $active-bg-nav;
+      color: $primary-bg-nav;
+      transition: all 0.4s;
+      &:hover{
+        background-color:$primary-bg-nav ;
+        color: $active-bg-nav;
+      }
+    }
+  }
+}
