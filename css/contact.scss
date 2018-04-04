@@ -5,20 +5,45 @@ $active-bg-nav: #FFCF98;
 
 .wrapper{
   background-color: $active-bg-nav;
-  .contactForm{
-    font-weight: 500;
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+    footer{
+      position:absolute;
+      bottom:0px;
+      width:100%;
+    }
   }
-  .sendMsg{
-    text-align: right;
-    button{
-      font-weight: 500;
-      background-color: $active-bg-nav;
-      color: $primary-bg-nav;
-      transition: all 0.4s;
-      &:hover{
-        background-color:$primary-bg-nav ;
-        color: $active-bg-nav;
-      }
+  .FormMain{
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/230743/pexels-photo-230743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: bottom;
+    background-size: cover;
+    color:white ;
+  }
+}
+.contactForm{
+  font-weight: 500;
+  @media screen and (min-width: 574) {
+    position: relative;
+    top: 50%;
+    transform: translateY(0%);
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.sendMsg{
+  text-align: right;
+  button{
+    font-weight: 500;
+    background-color: $active-bg-nav;
+    color: $primary-bg-nav;
+    transition: all 0.4s;
+    &:hover{
+      background-color:$primary-bg-nav ;
+      color: $active-bg-nav;
     }
   }
 }
