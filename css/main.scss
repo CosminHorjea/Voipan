@@ -10,6 +10,7 @@ $break-large: 1200px;
   background-color: $primary-bg-nav;
   padding: 0;
   height:3em;
+  box-shadow: 0px 0px 12px 0px;
 
   .container{
     height:100%;
@@ -40,6 +41,10 @@ $break-large: 1200px;
 
     }
 
+  }
+  .active{
+    background-color: $active-bg-nav;
+    color:$primary-bg-nav;
   }
   &-nav{
     align-items: center;
