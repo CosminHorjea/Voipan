@@ -13,12 +13,50 @@
       text-transform: uppercase;
       a{
         color:#4A4A4A;
+        opacity: 0.6;
         transition: all 0.2s;
         &:hover{
           color:#2C231A;
           text-decoration: none;
           border-bottom: 2px solid #2C231A;
           line-height: 1.2;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .produse-showcase{
+    .card{
+      border: none;
+      margin: 1em auto;
+      background-image: url('https://images.pexels.com/photos/19640/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      height:300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 1em;
+      background-position: top;
+      box-shadow: 1px 1px 10px 1px;
+
+
+      h2{
+        color:white;
+        width: auto;
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        margin:0.2em;
+        font-weight: 500;
+        opacity: 0;
+        transition: all 0.2s;
+        transform: translateY(50%);
+        &:hover{
+
+        }
+      }
+      &:hover{
+        h2{
+          opacity: 1;
+          transform: translateY(0);
         }
       }
     }

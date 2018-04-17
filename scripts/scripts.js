@@ -41,7 +41,6 @@ $( document ).ready(function() {
 
 
   btn.on('click',function(){
-
     nav.toggle({
       "duration":200,
     });
